@@ -45,7 +45,7 @@ SQL Server is a powerful relational database management system that supports the
    ```bash
    git clone https://github.com/wala-ham/CleanBlog.git
 
-[09:30] Feriel Zarrouki
+
 <p align="center">
 
   <img src="https://github.com/wala-ham/CleanBlog/blob/main/swagger.PNG" alt="Sublime's custom image"/>
