@@ -23,10 +23,14 @@ SQL Server is a relational database management system developed by Microsoft. It
 
 The Clean Architecture pattern consists of several layers:
 
-- **Entities:** Represent the core business objects.
-- **Use Cases:** Contain the application-specific business rules.
-- **Interfaces:** Define the contracts and boundaries between layers.
-- **Frameworks and Drivers:** Contain the implementation details such as databases, UI, and external frameworks.
+
+- **Domain:** Represents the core business objects. It defines the entities and the fundamental business logic without any dependencies on external frameworks or tools.
+
+- **Application:** Contains the application-specific business rules. This layer orchestrates the flow of data between the entities and use cases, ensuring that the business logic is implemented in a way that aligns with the application's requirements.
+
+- **Infrastructure:** Defines the contracts and boundaries between layers. It consists of interfaces that specify how data should be persisted, how external services should be integrated, and any other interactions between the application and the outside world.
+
+- **Api:** Contains the implementation details such as databases, UI, and external frameworks. This layer adapts the application to the specific technologies and tools required for execution. It includes database connections, user interfaces, and any external dependencies.
 
 This separation enables the application to adapt to changes in the external environment without affecting the core business logic.
 
@@ -39,4 +43,4 @@ SQL Server is a powerful relational database management system that supports the
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/clean-architecture-sql-server.git
+   git clone https://github.com/wala-ham/CleanBlog.git
